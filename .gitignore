@@ -1,6 +1,7 @@
 .gradle
 !gradle/wrapper/gradle-wrapper.jar
 
+target/
 */target/
 */*/target/
 */out/
