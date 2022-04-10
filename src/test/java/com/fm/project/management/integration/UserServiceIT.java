@@ -1,10 +1,14 @@
 package com.fm.project.management.integration;
 
+import com.fm.project.management.model.Role;
 import com.fm.project.management.model.User;
 import com.fm.project.management.service.UserService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.ArrayList;
+import java.util.Collections;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

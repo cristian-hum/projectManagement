@@ -29,10 +29,10 @@
                     Already have an account? <a href="#">Sign in</a>
                 </p>
 
-                <form onsubmit="alert('Success!')">
+                <form action="/register/add" th:object="${user}" method="POST" enctype="utf8">
                     <div class="input">
                         <label for="email-address">Email address</label>
-                        <input type="email" id="email-address" required/>
+                        <input type="email" id="email-address" th:field="*{email}" required/>
 
                         <div class="input__indicator"></div>
                     </div>
@@ -40,13 +40,13 @@
                     <div class="name">
                         <div class="input">
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" required/>
+                            <input type="text" id="first-name" th:field="*{firstName}" required/>
                             <div class="input__indicator"></div>
                         </div>
 
                         <div class="input">
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" required/>
+                            <input type="text" id="last-name" th:field="*{lastName}" required/>
                             <div class="input__indicator"></div>
                         </div>
 
@@ -55,7 +55,7 @@
 
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="password" id="password" required/>
+                        <input type="text" id="password" th:field="*{password}" required/>
 
                         <div class="input__indicator"></div>
                     </div>
